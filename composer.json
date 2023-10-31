@@ -1,0 +1,32 @@
+{
+    "name": "drblitz/blog-author",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "DrBlitz\\BlogAuthor\\": "Classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "DR BLITZ WEBLAB",
+            "email": "office@drblitz-weblab.com",
+            "homepage": "https://drblitz-weblab.com/",
+            "role": "Company"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "typo3/cms-core": "^11.5 || ^12.4",
+        "t3g/blog": "^12.0"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "extension-key": "blog_author"
+        }
+    }
+}

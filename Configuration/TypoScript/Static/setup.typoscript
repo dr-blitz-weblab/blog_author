@@ -1,0 +1,30 @@
+plugin.tx_blogauthor {
+    view {
+        templateRootPaths {
+            0 = EXT:blog_author/Resources/Private/Templates/
+            1 = {$plugin.tx_blogauthor.view.templateRootPaths}
+        }
+        partialRootPaths {
+            0 = EXT:blog_author/Resources/Private/Partials/
+            1 = {$plugin.tx_blogauthor.view.partialRootPaths}
+        }
+        layoutRootPaths {
+            0 = EXT:blog_author/Resources/Private/Layouts/
+            1 = {$plugin.tx_blogauthor.view.layoutRootPaths}
+        }
+    }
+}
+
+
+lib.post_authors {
+
+}
+
+
+lib.post_authors = USER
+lib.post_authors {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = BlogAuthor
+    pluginName = Authors
+    vendorName = DrBlitz
+}

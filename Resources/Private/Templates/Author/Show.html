@@ -1,0 +1,9 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+    <f:if condition="{authors}">
+        <f:for each="{authors}" as="author">
+            <f:render partial="Author" arguments="{author:author,settings:settings}" />
+        </f:for>
+    </f:if>
+</f:section>

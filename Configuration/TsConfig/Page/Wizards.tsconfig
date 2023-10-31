@@ -1,0 +1,14 @@
+mod.wizards.newContentElement.wizardItems.blog {
+    elements {
+        blogauthor_authors {
+            iconIdentifier = plugin-blog-posts
+            title = LLL:EXT:blog_author/Resources/Private/Language/locallang_db.xlf:plugin.blog_authors.title
+            description = LLL:EXT:blog_author/Resources/Private/Language/locallang_db.xlf:plugin.blog_authors.description
+            tt_content_defValues {
+                CType = list
+                list_type = blogauthor_authors
+            }
+        }
+
+    }
+}
